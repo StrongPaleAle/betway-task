@@ -4,6 +4,12 @@ export const data = {
         image: {
             alt: "Atlantean Treasures Mega Moolah",
             src: "/resources/images/Hero-Image.jpg",
+            sources:[
+                {
+                    srcSet: "/resources/images/Hero-Image.webp",
+                    type: "image/webp"
+                }
+            ],
             with: 750,
             height: 1300
 
