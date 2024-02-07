@@ -1,0 +1,32 @@
+$font-map: (
+    'Inter': (
+        'family': 'Inter',
+        'weight': (
+            'Thin': 100,
+            'ExtraLight': 200,
+            'Light': 300,
+            'Regular': 400,
+            'Medium': 500,
+            'SemiBold': 600,
+            'Bold': 700,
+            'ExtraBold': 800,
+            'Black': 900
+        )
+    )
+);
+
+@each $font, $font-props in $font-map {
+
+    $family: map-get($font-props, 'family');
+
+    @each $weight, $weight-value in map-get($font-props, 'weight') {
+        @font-face {
+            font-family: $family;
+            src:    local($family + '-' + $weight),
+                    url('/fonts/' + $family + '-' + $weight + '.woff2') format('woff2');
+            font-weight: $weight-value;
+            font-style: 'normal';
+            font-display: swap;
+        }
+    }
+}

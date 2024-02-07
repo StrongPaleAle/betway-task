@@ -5,6 +5,13 @@ import Page from './components/Page.vue';
 <template>
   <Page />
 </template>
-<style scoped>
-
+<style>
+#app {
+ background-image: url('./assets/images/image2.jpeg');
+ background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100svh;
+  width: 100%;
+}
 </style>
