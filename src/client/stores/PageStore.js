@@ -8,7 +8,7 @@ export const usePageStore = defineStore('PageStore', {
     actions: {
         async fetchPage() {
             const response = await axios.get('/api/page');
-            this.page = response.data;
+            this.page = await response.data;
         }
     }
 })

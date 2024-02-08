@@ -10,7 +10,7 @@ export const data = {
                     type: "image/webp"
                 }
             ],
-            with: 750,
+            width: 750,
             height: 1300
 
         },
