@@ -4,8 +4,9 @@ import 'dotenv/config'
 
 
 const app = express();
-ViteExpress.config({ mode: "production" })
-
+if (process.env.RUNTIME === "production") {
+  ViteExpress.config({ mode: "production" })
+}
 import { data } from "./data.js";
 
 app.get("/api/page", (req, res) => {

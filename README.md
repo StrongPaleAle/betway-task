@@ -1,7 +1,17 @@
-# Vue 3 + Vite
+# Red Interactive- Dev Assessment - Alessio Falchi
+This is my solution to the Red Interactive Dev Assessment. Is a simple application using [Vite-Express](https://github.com/szymmis/vite-express) with [Vue 3](https://vuejs.org/). On portrait devices the layout is the same as the image provided, on landscape devices I putted image and content on two columns. I used, as font, [Source Sans 3](https://fonts.google.com/specimen/Source+Sans+3), which was the closest font to the one in the sample image that I could use self-hosted.
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Installation and Running
+```bash
+npm install
+npm run build
+npm run start
+```
+The application will be running on [http://localhost:3000](http://localhost:3000)
 
-## Recommended IDE Setup
+## Running in development mode
+```bash
+npm run dev
+```
+The application will be running on [http://localhost:3000](http://localhost:3000)
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
