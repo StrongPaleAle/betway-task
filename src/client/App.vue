@@ -1,16 +1,14 @@
 <script setup>
-import Page from './components/Page.vue';
+import Hero from './components/Hero.vue';
+import TheHeader from './components/TheHeader.vue';
 </script>
 
 <template>
-  <Page />
+  <TheHeader />
+  <Hero />
 </template>
 <style>
 #app {
- background-image: url('./assets/images/image2.jpeg');
- background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
   height: 100svh;
   width: 100%;
 }

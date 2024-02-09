@@ -47,6 +47,13 @@ img {
   height: auto;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
